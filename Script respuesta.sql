@@ -23,6 +23,6 @@ SELECT SUM (cantidad) FROM inscritos;--respuesta 2
 
 SELECT * FROM inscritos ORDER BY fecha ASC;-- respuesta 3
 
+SELECT fecha, SUM(cantidad) FROM inscritos  GROUP BY fecha IN fecha ASC; --respuesta 4
 
-
-
+SELECT fecha, SUM(cantidad) FROM inscritos GROUP BY fecha ORDER BY SUM DESC ;--respuesta 5
